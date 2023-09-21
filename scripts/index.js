@@ -22,8 +22,8 @@ function changeStatusButtons() {
   next.disabled = isLast;
 }
 
-function navigationMember(direction) {
-  activeMember = activeMember + direction;
+function changeMember(memberId) {
+  activeMember = memberId;
   const member = members[activeMember];
 
   console.log(activeMember, member);
@@ -35,6 +35,14 @@ function navigationMember(direction) {
   changeStatusButtons();
 }
 
+function navigationMember(direction) {
+  changeMember(activeMember + direction);
+}
+
 function changeMenu() {
   menu.classList.toggle("active");
+}
+
+function setMember(memberId) {
+  changeMember(memberId);
 }
