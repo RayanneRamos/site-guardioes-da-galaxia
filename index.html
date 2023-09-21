@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
-  </head>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Guardiões da Galáxia</title>
   </head>
   <body>
@@ -21,9 +23,34 @@
         <img src="./assets/members/groot.png" alt="groot" loading="lazy" />
       </div>
     </div>
-    <div>
-      <button type="button" onclick="navigationMember(-1)" id="button-prev" disabled>voltar</button>
-      <button type="button" onclick="navigationMember(1)" id="button-next">avançar</button>
+
+    <div class="app">
+      <header>
+        <img src="./assets/logo.png" alt="logo" />
+        <button type="button" id="menu" onclick="changeMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main>
+        <h1>Peter Quill</h1>
+
+        <div>
+          <button
+            type="button"
+            onclick="navigationMember(-1)"
+            id="button-prev"
+            disabled
+          >
+            voltar
+          </button>
+          <button type="button" onclick="navigationMember(1)" id="button-next">
+            avançar
+          </button>
+        </div>
+      </main>
     </div>
     <script src="./scripts/index.js"></script>
   </body>
