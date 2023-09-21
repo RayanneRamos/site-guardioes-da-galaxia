@@ -8,9 +8,11 @@ const members = [
 ];
 
 let activeMember = 0;
+
 const images = document.getElementById("images");
 const menu = document.getElementById("menu");
 const memberName = document.getElementById("member__name");
+const navigation = document.getElementById("navigation");
 
 function changeStatusButtons() {
   const prev = document.getElementById("button__prev");
@@ -41,6 +43,7 @@ function navigationMember(direction) {
 
 function changeMenu() {
   menu.classList.toggle("active");
+  navigation.classList.toggle("active");
 }
 
 function setMember(memberId) {
